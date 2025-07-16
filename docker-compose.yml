@@ -1,0 +1,12 @@
+services:
+  docusaurus:
+    build:
+      context: .
+    ports:
+      - '127.0.0.1:3000:3000/tcp'
+    volumes:
+      - '.:/app'
+    command:
+      - bash
+      - -c
+      - "npm install --maxsocket 1 && npm start"
