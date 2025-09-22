@@ -76,7 +76,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentación',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/IFAM-SEGURIDAD-S-L-U/CLOUD',
           label: 'GitHub',
