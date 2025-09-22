@@ -112,10 +112,6 @@ const config: Config = {
           title: 'Más',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/IFAM-SEGURIDAD-S-L-U/CLOUD',
             },
