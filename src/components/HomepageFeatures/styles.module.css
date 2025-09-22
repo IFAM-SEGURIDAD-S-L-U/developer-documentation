@@ -1,11 +1,269 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.magentaBadge {
+  display: inline-block;
+  background: var(--ifam-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.highlightText {
+  color: var(--ifam-primary);
+  font-weight: 600;
+}
+
+.cardAccent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifam-primary), var(--ifam-primary-light));
+}
+
+/* Stats section */
+.statsSection {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(184, 51, 106, 0.2);
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--ifam-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--ifam-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: white;
+  border: 2px solid var(--ifam-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: var(--ifam-primary);
+  color: white;
+  border-color: var(--ifam-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(184, 51, 106, 0.3);
+}
+
+.trustIndicators {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.trustIcon {
+  font-size: 1.2rem;
+  filter: hue-rotate(300deg) brightness(1.2);
+}
+
+.productBorder {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 3px solid #b8336a;
+  border-radius: 25px;
+  opacity: 0.6;
+}
+
+.productGlow {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: radial-gradient(ellipse at center, rgba(184, 51, 106, 0.3) 0%, transparent 70%);
+  border-radius: 30px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.timelineBadge {
+  display: inline-block;
+  background: linear-gradient(45deg, var(--ifam-primary), var(--ifam-primary-light));
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.highlightYear {
+  color: var(--ifam-primary);
+  font-weight: 700;
+  position: relative;
+}
+
+.highlightYear::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--ifam-primary), transparent);
+}
+
+.companyActions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.learnMoreButton {
+  display: inline-block;
+  background: var(--ifam-primary);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--ifam-primary);
+}
+
+.learnMoreButton:hover {
+  background: transparent;
+  color: var(--ifam-primary);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(184, 51, 106, 0.25);
+}
+
+.testimonialsSection {
+  background: linear-gradient(135deg, rgba(184, 51, 106, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 4rem 0;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--ifam-primary);
+  position: relative;
+}
+
+.testimonialCard::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: var(--ifam-primary);
+  line-height: 1;
+  font-family: serif;
+}
+
+.testimonialQuote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--ifam-text-muted);
+  margin-bottom: 1rem;
+}
+
+.testimonialAuthor {
+  color: var(--ifam-primary-darkest);
+}
+
+@media screen and (max-width: 996px) {
+  .trustIndicators {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .secondaryButton {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .statsSection {
+    margin-top: 3rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trustIndicators {
+    gap: 1rem;
+  }
+  
+  .trustItem {
+    font-size: 0.8rem;
+  }
+  
+  .magentaBadge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
 }
