@@ -90,11 +90,12 @@ main {
    ======================================== */
 .navbar {
   background-color: var(--ifam-header-bg) !important;
-  border-bottom: 1px solid var(--ifam-border-color);
+  border-bottom: none !important;
   height: var(--ifm-navbar-height);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: none !important;
 }
 
 .navbar__brand {
@@ -144,6 +145,7 @@ main {
   min-height: calc(100vh - var(--ifm-navbar-height));
   display: flex;
   align-items: center;
+  margin-top: 0 !important;
 }
 
 .hero__title {
