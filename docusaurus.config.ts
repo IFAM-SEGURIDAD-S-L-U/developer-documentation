@@ -63,11 +63,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/logo.jpg',
+    image: 'img/ifam.svg',
     navbar: {
       logo: {
         alt: 'IFAM Logo',
-        src: 'img/Logo.jpg',
+        src: 'img/ifam.svg',
       },
       items: [
         {
@@ -77,9 +77,48 @@ const config: Config = {
           label: 'Documentación',
         },
         {
-          href: 'https://github.com/IFAM-SEGURIDAD-S-L-U/CLOUD',
-          label: 'GitHub',
-          position: 'right',
+          type: 'dropdown',
+          label: 'Examples',
+          position: 'left',
+          items: [
+            {
+              label: 'Todo.md',
+              to: '/docs/examples/todo',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'How-to',
+          position: 'left',
+          items: [
+            {
+              label: 'Todo.md',
+              to: '/docs/how-to/todo',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Reference',
+          position: 'left',
+          items: [
+            {
+              label: 'Todo.md',
+              to: '/docs/reference/todo',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Tutorial',
+          position: 'left',
+          items: [
+            {
+              label: 'Todo.md',
+              to: '/docs/tutorial/todo',
+            },
+          ],
         },
       ],
     },

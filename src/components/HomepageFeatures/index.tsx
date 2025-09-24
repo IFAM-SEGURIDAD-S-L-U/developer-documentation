@@ -1,4 +1,3 @@
-// Enhanced HomepageFeatures with magenta accents
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
@@ -35,7 +34,6 @@ export default function HomepageFeatures(): ReactNode {
   if (FeatureList.length === 0) {
     return null;
   }
-
   return (
     <section className={styles.features}>
       <div className="container">

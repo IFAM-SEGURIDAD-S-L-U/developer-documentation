@@ -1,4 +1,3 @@
-// Updated Homepage Component with Full-Height Layout
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -15,32 +14,54 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            {/* Add magenta badge/new product indicator */}
+            {/* Professional badge with better contrast */}
             <div className={styles.newBadge}>
-              DOCUMENTACION
+              PLATAFORMA CLOUD
             </div>
             <Heading as="h1" className={styles.heroTitle}>
-              IFAM
+              IFAM Security
             </Heading>
             <p className={styles.heroSubtitle}>
-              Documentacion diseñada para desarrolladores y usuarios de productos IFAM con la plataforma CLOUD.
+              Portal técnico integral para desarrolladores y administradores. 
+              Accede a guías completas, APIs y recursos para implementar 
+              soluciones de seguridad empresarial con la plataforma IFAM Cloud.
             </p>
-            {/* Add the button here in the hero section */}
+            {/* Improved button styling */}
             <div className={styles.buttons}>
               <Link
                 className={clsx('button button--secondary button--lg', styles.ctaButton)}
                 to="/docs/intro">
-                VER DOCUMENTACION
+                EXPLORAR GUÍA
               </Link>
             </div>
+            
+            {/* Trust indicators for professionalism */}
+            <div className={styles.trustIndicators}>
+              <div className={styles.trustItem}>
+                <span className={styles.trustIcon}>✓</span>
+                <span>API REST Completa</span>
+              </div>
+              <div className={styles.trustItem}>
+                <span className={styles.trustIcon}>⚡</span>
+                <span>Integración Rápida</span>
+              </div>
+              <div className={styles.trustItem}>
+                <span className={styles.trustIcon}>🔒</span>
+                <span>Seguridad Empresarial</span>
+              </div>
+            </div>
           </div>
+          
           <div className={styles.heroImage}>
             <div className={styles.productShowcase}>
               <div className={styles.productImage}>
-                {/* Enhanced placeholder with magenta accent border */}
+                {/* More professional placeholder */}
                 <div className={styles.imagePlaceholder}>
                   <div className={styles.productBorder}></div>
-                  🔒 DOCUMENTACION
+                  <div className={styles.placeholderContent}>
+                    <div className={styles.placeholderText}>Portal Técnico</div>
+                    <div className={styles.placeholderSubtext}>APIs & Guías</div>
+                  </div>
                   <div className={styles.productGlow}></div>
                 </div>
               </div>
@@ -56,8 +77,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Líder en Seguridad`}
-      description="IFAM - Documentacion diseñada para desarrolladores y usuarios de productos IFAM con la plataforma CLOUD.">
+      title={`${siteConfig.title} - Portal Técnico`}
+      description="Portal técnico IFAM Cloud - Documentación completa para desarrolladores, APIs, guías de integración y recursos de seguridad empresarial.">
       <div className={styles.homepageContainer}>
         <HomepageHeader />
         <main className={styles.homepageMain}>
