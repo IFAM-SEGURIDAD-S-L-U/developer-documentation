@@ -104,6 +104,10 @@ const config: Config = {
           position: 'left',
           items: [
             {
+              label: 'API Desarrollador.md',
+              to: '/docs/reference/developer-api',
+            },
+            {
               label: 'Todo.md',
               to: '/docs/reference/todo',
             },

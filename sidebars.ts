@@ -40,6 +40,7 @@ const sidebars: SidebarsConfig = {
       label: 'Reference Guides',
       collapsed: false,
       items: [
+        'reference/developer-api',
         'reference/todo',
       ],
     },
