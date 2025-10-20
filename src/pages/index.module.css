@@ -1,20 +1,19 @@
-/* Enhanced Homepage Styles with Better Contrast and Professional Look */
-
 .homepage-container {
-  min-height: calc(100vh - var(--ifm-navbar-height, 60px));
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #fafafa;
 }
 
 .heroBanner {
-  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-  padding: 4rem 0 6rem;
+  background: #ffffff;
+  padding: 0;
   position: relative;
   overflow: hidden;
   flex: 1;
   display: flex;
   align-items: center;
-  min-height: calc(100vh - var(--ifm-navbar-height, 60px) - 120px);
+  min-height: calc(100vh - var(--ifm-navbar-height, 60px));
 }
 
 .heroBanner::before {
@@ -29,126 +28,122 @@
 }
 
 .heroContent {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
+  gap: 80px;
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0px 0px;
 }
 
 .heroText {
   flex: 1;
-  max-width: 600px;
+  max-width: 580px;
 }
 
 .heroImage {
-  flex: 1;
-  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Improved badge with better contrast */
 .newBadge {
   display: inline-block;
-  background: linear-gradient(45deg, #b8336a, #c53d75);
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  background: transparent;
+  color: #d32f2f;
+  padding: 0;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-  box-shadow: 0 4px 12px rgba(184, 51, 106, 0.3);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  box-shadow: none;
 }
 
-/* Enhanced title with better contrast */
 .heroTitle {
-  font-size: 4.5rem;
-  font-weight: 900;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  color: #1a202c;
+  text-shadow: none;
   letter-spacing: -0.02em;
 }
 
-/* Improved subtitle contrast */
 .heroSubtitle {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
   margin-bottom: 2.5rem;
-  max-width: 520px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  max-width: 100%;
+  text-shadow: none;
   font-weight: 400;
 }
 
-/* Enhanced button styling */
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .ctaButton {
-  background: linear-gradient(45deg, #b8336a, #c53d75);
-  color: white !important; /* Force white color */
-  border: 2px solid transparent;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 1.2rem 2.5rem;
-  border-radius: 50px;
-  font-size: 0.9rem;
+  background: #d32f2f;
+  color: white !important;
+  border: 2px solid #d32f2f;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.3px;
+  padding: 14px 32px;
+  border-radius: 25px;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  box-shadow: 0 6px 20px rgba(184, 51, 106, 0.3);
+  text-shadow: none;
+  box-shadow: none;
 }
 
 .ctaButton:hover {
-  background: transparent;
-  color: white !important; /* Keep white on hover */
-  border-color: #b8336a;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(184, 51, 106, 0.4);
+  background: #b71c1c;
+  color: white !important;
+  border-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.25);
   text-decoration: none;
 }
 
 .secondaryButton {
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 1.2rem 2rem;
-  border-radius: 50px;
-  font-size: 0.9rem;
+  background: white;
+  color: #1a202c;
+  border: 2px solid #e0e0e0;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.3px;
+  padding: 14px 32px;
+  border-radius: 25px;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  backdrop-filter: blur(10px);
+  backdrop-filter: none;
 }
 
 .secondaryButton:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border-color: rgba(255, 255, 255, 0.6);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: #f5f5f5;
+  color: #1a202c;
+  border-color: #d0d0d0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-decoration: none;
 }
 
-/* Trust indicators for professionalism */
 .trustIndicators {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   flex-wrap: wrap;
 }
 
@@ -156,22 +151,21 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
+  color: #4a5568;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.5rem 0;
 }
 
 .trustIcon {
   font-size: 1.1rem;
-  color: #b8336a;
-  filter: brightness(1.3);
+  color: #d32f2f;
 }
 
 /* Enhanced product showcase */
 .productShowcase {
   position: relative;
-  text-align: center;
+  width: 100%;
+  max-width: 550px;
 }
 
 .productImage {
@@ -179,19 +173,16 @@
 }
 
 .imagePlaceholder {
-  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
-  border: 2px solid rgba(255,255,255,0.25);
-  border-radius: 20px;
-  padding: 4rem 3rem;
-  backdrop-filter: blur(15px);
+  background: linear-gradient(135deg, #f1f1f1 0%, #fafafa 100%);
+  border-radius: 50%;
+  padding: 80px;
   text-align: center;
   position: relative;
-  min-height: 300px;
+  aspect-ratio: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
 }
 
 .placeholderContent {
@@ -202,42 +193,23 @@
 }
 
 .placeholderText {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  margin-bottom: 0.75rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
 }
 
 .placeholderSubtext {
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  color: #4a5568;
   font-weight: 500;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
 
-.productBorder {
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  right: -12px;
-  bottom: -12px;
-  border: 4px solid #b8336a;
-  border-radius: 28px;
-  opacity: 0.8;
-}
-
+.productBorder,
 .productGlow {
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  right: -25px;
-  bottom: -25px;
-  background: radial-gradient(ellipse at center, rgba(184, 51, 106, 0.5) 0%, transparent 70%);
-  border-radius: 35px;
-  animation: pulse 3s infinite;
+  display: none;
 }
 
 @keyframes pulse {
@@ -245,12 +217,10 @@
   50% { opacity: 0.7; transform: scale(1.03); }
 }
 
-
-/* Professional company info section */
 .companyInfo {
-  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  background: #f8f9fa;
   padding: 5rem 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .companyContent {
@@ -269,18 +239,17 @@
 
 .companyDescription {
   color: #4a5568;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.7;
   margin: 0 auto 4rem;
   max-width: 800px;
   font-weight: 400;
 }
 
-/* Stats section for credibility */
 .statsSection {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(184, 51, 106, 0.2);
+  border-top: 1px solid #e0e0e0;
 }
 
 .statItem {
@@ -291,7 +260,7 @@
 .statNumber {
   font-size: 2.8rem;
   font-weight: 900;
-  color: #b8336a;
+  color: #d32f2f;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -311,36 +280,34 @@
 
 .learnMoreButton {
   display: inline-block;
-  background: #b8336a;
+  background: #d32f2f;
   color: white;
-  padding: 0.8rem 2.5rem;
-  border-radius: 30px;
+  padding: 14px 32px;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
-  border: 2px solid #b8336a;
-  box-shadow: 0 4px 15px rgba(184, 51, 106, 0.25);
+  border: 2px solid #d32f2f;
+  box-shadow: none;
 }
 
 .learnMoreButton:hover {
-  background: transparent;
-  color: #b8336a;
+  background: #b71c1c;
+  border-color: #b71c1c;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(184, 51, 106, 0.35);
+  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.25);
 }
 
-/* Main container */
 .homepageMain {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background: white;
 }
 
-/* Features section (if needed) */
 .features {
   display: flex;
   align-items: center;
@@ -349,37 +316,42 @@
   background: white;
 }
 
-/* Responsive improvements */
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 3rem 0 4rem;
-    min-height: calc(100vh - var(--ifm-navbar-height, 60px) - 80px);
+    padding: 40px 0;
+    min-height: auto;
   }
 
   .heroContent {
-    flex-direction: column;
-    gap: 3rem;
-    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 40px 30px;
   }
 
-  .heroTitle {
-    font-size: 3.5rem;
+  .heroImage {
+    order: 2;
   }
 
-  .heroSubtitle {
-    font-size: 1.2rem;
+  .heroText {
+    order: 1;
     max-width: 100%;
   }
 
-  .buttons {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  .heroTitle {
+    font-size: 2.2rem;
   }
 
-  .secondaryButton {
-    margin-left: 0;
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .ctaButton, .secondaryButton {
+    flex: 1;
+    min-width: 200px;
   }
 
   .trustIndicators {
@@ -387,16 +359,24 @@
     margin-top: 2rem;
   }
 
+  .imagePlaceholder {
+    padding: 60px;
+  }
+
+  .placeholderText {
+    font-size: 2rem;
+  }
+
   .companyInfo {
     padding: 4rem 0;
   }
 
   .companyTitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .companyDescription {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .statsSection {
@@ -410,54 +390,62 @@
 
 @media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 2.5rem 0 3.5rem;
+    padding: 30px 0;
+  }
+
+  .heroContent {
+    gap: 40px;
+    padding: 30px 20px;
   }
 
   .heroTitle {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 
   .heroSubtitle {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .ctaButton, .secondaryButton {
-    padding: 1rem 2rem;
-    font-size: 0.85rem;
+    padding: 12px 24px;
+    font-size: 0.9rem;
     width: 100%;
-    max-width: 280px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
   }
 
   .trustIndicators {
     gap: 1.5rem;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .trustItem {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .imagePlaceholder {
-    padding: 2.5rem 1.5rem;
-    min-height: 160px;
-  }
-
-  .placeholderIcon {
-    font-size: 2.5rem;
+    padding: 40px;
   }
 
   .placeholderText {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .placeholderSubtext {
+    font-size: 0.95rem;
   }
 
   .companyTitle {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .companyDescription {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 0.95rem;
+    padding: 0 20px;
   }
 
   .statNumber {

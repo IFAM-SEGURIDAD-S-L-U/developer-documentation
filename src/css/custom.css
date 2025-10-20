@@ -28,7 +28,7 @@
   --ifm-line-height-base: 1.6;
   
   /* Layout */
-  --ifm-navbar-background-color: #4a5568;
+  --ifm-navbar-background-color: #fafafa;
   --ifm-navbar-link-color: white;
   --ifm-navbar-height: 60px;
   
@@ -37,10 +37,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(184, 51, 106, 0.1);
   
   /* Custom variables */
-  --ifam-header-bg: #4a5568;
+  --ifam-header-bg: #fafafa;
   --ifam-text-muted: #6b7280;
   --ifam-border-color: #e5e7eb;
   --ifam-section-bg: #f8fafc;
+  --ifam-footer-bg: #343c47;
 }
 
 [data-theme='dark'] {
@@ -53,7 +54,7 @@
   --ifm-color-primary-lightest: #f1b8d1;
   --docusaurus-highlighted-code-line-bg: rgba(229, 92, 149, 0.2);
   
-  --ifam-header-bg: #374151;
+  --ifam-header-bg: #fafafa;
   --ifam-text-muted: #9ca3af;
   --ifam-border-color: #374151;
   --ifam-section-bg: #1f2937;
@@ -118,14 +119,14 @@ main {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
-  color: white !important;
+  color: #cbccce !important;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .navbar__link:hover {
-  color: var(--ifam-primary-light) !important;
+  color: #383b40 !important;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -235,14 +236,14 @@ main {
    FOOTER
    ======================================== */
 .footer {
-  background-color: var(--ifam-header-bg);
+  background-color: var(--ifam-footer-bg);
   color: white;
   margin-top: auto;
   padding: 2rem 0 1.5rem;
 }
 
 .footer__title {
-  color: var(--ifam-primary-light);
+  color: #fdffff;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
