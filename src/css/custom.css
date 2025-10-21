@@ -97,6 +97,15 @@ main {
   top: 0;
   z-index: 1000;
   box-shadow: none !important;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .navbar__brand {
